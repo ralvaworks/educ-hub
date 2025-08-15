@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Resource Hub</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-book-fill me-2"></i>EduHub
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories-section">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <!-- Introduction -->
+                    <div id="introduction" class="hero-content">
+                        <h1 class="display-4 fw-bold text-white mb-4">
+                            Welcome to Educational Resource Hub
+                        </h1>
+                        <p class="lead text-white mb-4">
+                            Discover a world of learning opportunities with our comprehensive collection of educational resources. 
+                            From interactive courses to research materials, we provide everything you need to excel in your academic journey.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#categories-section" class="btn btn-light btn-lg me-3">
+                                <i class="bi bi-search me-2"></i>Explore Resources
+                            </a>
+                            <a href="#about" class="btn btn-outline-light btn-lg">
+                                <i class="bi bi-info-circle me-2"></i>Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <i class="bi bi-mortarboard-fill display-1 text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Featured Resources</h2>
+                    <p class="lead text-muted">Handpicked educational content for enhanced learning</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Programming Fundamentals</h5>
+                            <p class="card-text">Master the basics of programming with our comprehensive course covering multiple languages.</p>
+                            <a href="#categories-section" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-calculator display-4 text-success mb-3"></i>
+                            <h5 class="card-title">Mathematics Excellence</h5>
+                            <p class="card-text">From algebra to calculus, strengthen your mathematical foundation with expert guidance.</p>
+                            <a href="#categories-section" class="btn btn-success">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-globe display-4 text-info mb-3"></i>
+                            <h5 class="card-title">Language Learning</h5>
+                            <p class="card-text">Expand your linguistic horizons with interactive language learning resources.</p>
+                            <a href="#categories-section" class="btn btn-info">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories-section" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Resource Categories</h2>
+                    <p class="lead text-muted">Choose from a wide range of educational topics</p>
+                </div>
+            </div>
+            
+            <!-- Category Listings -->
+            <div id="categories" class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card text-center p-4 h-100">
+                        <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+                        <h5>Computer Science</h5>
+                        <p class="text-muted">Programming, algorithms, data structures, and software development.</p>
+                        <span class="badge bg-primary">120+ Resources</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card text-center p-4 h-100">
+                        <i class="bi bi-graph-up display-4 text-success mb-3"></i>
+                        <h5>Mathematics</h5>
+                        <p class="text-muted">Algebra, calculus, statistics, and advanced mathematical concepts.</p>
+                        <span class="badge bg-success">85+ Resources</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card text-center p-4 h-100">
+                        <i class="bi bi-lightning display-4 text-warning mb-3"></i>
+                        <h5>Science</h5>
+                        <p class="text-muted">Physics, chemistry, biology, and earth sciences.</p>
+                        <span class="badge bg-warning">95+ Resources</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card text-center p-4 h-100">
+                        <i class="bi bi-chat-dots display-4 text-info mb-3"></i>
+                        <h5>Languages</h5>
+                        <p class="text-muted">English, Spanish, French, German, and more languages.</p>
+                        <span class="badge bg-info">70+ Resources</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card text-center p-4 h-100">
+                        <i class="bi bi-palette display-4 text-danger mb-3"></i>
+                        <h5>Arts & Design</h5>
+                        <p class="text-muted">Graphic design, fine arts, digital media, and creative writing.</p>
+                        <span class="badge bg-danger">60+ Resources</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card text-center p-4 h-100">
+                        <i class="bi bi-briefcase display-4 text-secondary mb-3"></i>
+                        <h5>Business</h5>
+                        <p class="text-muted">Management, economics, marketing, and entrepreneurship.</p>
+                        <span class="badge bg-secondary">75+ Resources</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card text-center p-4 h-100">
+                        <i class="bi bi-heart-pulse display-4 text-danger mb-3"></i>
+                        <h5>Health & Medicine</h5>
+                        <p class="text-muted">Medical studies, nursing, public health, and wellness.</p>
+                        <span class="badge bg-danger">55+ Resources</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="category-card text-center p-4 h-100">
+                        <i class="bi bi-clock-history display-4 text-dark mb-3"></i>
+                        <h5>History</h5>
+                        <p class="text-muted">World history, ancient civilizations, and historical analysis.</p>
+                        <span class="badge bg-dark">45+ Resources</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sample Resources -->
+            <div id="resources">
+                <h3 class="fw-bold mb-4">Sample Resources</h3>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-file-earmark-text-fill text-primary me-2"></i>
+                                    <span class="badge bg-primary">Course</span>
+                                </div>
+                                <h6 class="card-title">Introduction to Web Development</h6>
+                                <p class="card-text small text-muted">Learn HTML, CSS, and JavaScript basics to create interactive websites.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted">4.8 ⭐ (245 reviews)</span>
+                                    <button class="btn btn-sm btn-outline-primary">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-play-circle-fill text-success me-2"></i>
+                                    <span class="badge bg-success">Video</span>
+                                </div>
+                                <h6 class="card-title">Calculus I: Limits and Derivatives</h6>
+                                <p class="card-text small text-muted">Comprehensive video series covering fundamental calculus concepts.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted">4.9 ⭐ (189 reviews)</span>
+                                    <button class="btn btn-sm btn-outline-success">Watch</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="bi bi-file-earmark-pdf-fill text-warning me-2"></i>
+                                    <span class="badge bg-warning">PDF</span>
+                                </div>
+                                <h6 class="card-title">Spanish Grammar Reference</h6>
+                                <p class="card-text small text-muted">Complete guide to Spanish grammar rules and exercises.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted">4.7 ⭐ (156 reviews)</span>
+                                    <button class="btn btn-sm btn-outline-warning">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">About EduHub</h2>
+                    <p class="lead text-muted">Empowering learners worldwide through quality education</p>
+                </div>
+            </div>
+            
+            <!-- Mission Statement -->
+            <div id="mission" class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                    <div class="mission-content text-center">
+                        <i class="bi bi-bullseye display-4 text-primary mb-4"></i>
+                        <h3 class="fw-bold mb-4">Our Mission</h3>
+                        <p class="lead">
+                            At Educational Resource Hub, we believe that quality education should be accessible to everyone, everywhere. 
+                            Our mission is to democratize learning by providing a comprehensive platform where students, educators, 
+                            and lifelong learners can discover, access, and share high-quality educational resources.
+                        </p>
+                        <p>
+                            We are committed to fostering a global community of learners who support each other's growth and success. 
+                            Through innovative technology and carefully curated content, we aim to break down barriers to education 
+                            and create opportunities for personal and professional development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div id="contact" class="row">
+                <div class="col-12">
+                    <div class="contact-section bg-white p-5 rounded shadow-sm">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3 class="fw-bold mb-4">Get in Touch</h3>
+                                <p class="mb-4">
+                                    Have questions or suggestions? We'd love to hear from you! 
+                                    Reach out to our team and we'll get back to you as soon as possible.
+                                </p>
+                                
+                                <div class="contact-info">
+                                    <div class="contact-item d-flex align-items-center mb-3">
+                                        <i class="bi bi-envelope-fill text-primary me-3"></i>
+                                        <div>
+                                            <strong>Email:</strong><br>
+                                            <a href="mailto:info@eduhub.com" class="text-decoration-none">info@eduhub.com</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item d-flex align-items-center mb-3">
+                                        <i class="bi bi-telephone-fill text-primary me-3"></i>
+                                        <div>
+                                            <strong>Phone:</strong><br>
+                                            <a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567-8900</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item d-flex align-items-center mb-3">
+                                        <i class="bi bi-geo-alt-fill text-primary me-3"></i>
+                                        <div>
+                                            <strong>Address:</strong><br>
+                                            123 Education Street<br>
+                                            Learning City, LC 12345
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item d-flex align-items-center">
+                                        <i class="bi bi-clock-fill text-primary me-3"></i>
+                                        <div>
+                                            <strong>Support Hours:</strong><br>
+                                            Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                            Saturday: 10:00 AM - 4:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <h4 class="fw-bold mb-4">Send us a Message</h4>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="bi bi-send me-2"></i>Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-book-fill me-2"></i>
+                        <span class="fw-bold">EduHub</span>
+                        <span class="ms-2">© 2025 Educational Resource Hub. All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-md-end">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
